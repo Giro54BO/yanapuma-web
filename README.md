@@ -1,6 +1,6 @@
 # Yanapuma — Propuestas de diseño web
 
-Dos direcciones de diseño para la home de **Yanapuma Wildlife Reserve**, reserva
+Dos direcciones de diseño para la home de **Yanapuma Wildlife Sanctuary**, reserva
 privada de conservación en la zona de amortiguamiento del Parque Nacional Amboró
 (Santa Cruz, Bolivia).
 
@@ -38,4 +38,4 @@ Luego abrir <http://localhost:4173/index.html> o <http://localhost:4173/index-b.
 ---
 
 Trabajo de [Giro54](https://github.com/Giro54BO). Contenido y material gráfico
-propiedad de Yanapuma Wildlife Reserve.
+propiedad de Yanapuma Wildlife Sanctuary.
