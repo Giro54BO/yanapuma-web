@@ -294,11 +294,12 @@ def construir(html):
     html = html.replace('<html lang="es">', '<html lang="en">', 1)
     html = html.replace('content="es_BO"', 'content="en"', 1)
 
-    # El selector de idioma y los alternos apuntan al reves.
+    # El selector de idioma y los alternos apuntan al reves. Sin contador: el
+    # selector sale dos veces, en el menu y en el pie.
     html = html.replace('<a href="./" hreflang="es" aria-current="true">ES</a>',
-                        '<a href="../" hreflang="es">ES</a>', 1)
+                        '<a href="../" hreflang="es">ES</a>')
     html = html.replace('<a href="en/" hreflang="en">EN</a>',
-                        '<a href="./" hreflang="en" aria-current="true">EN</a>', 1)
+                        '<a href="./" hreflang="en" aria-current="true">EN</a>')
     html = html.replace('<link rel="alternate" hreflang="es" href="./">',
                         '<link rel="alternate" hreflang="es" href="../">', 1)
     html = html.replace('<link rel="alternate" hreflang="en" href="en/">',
