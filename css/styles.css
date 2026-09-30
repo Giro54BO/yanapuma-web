@@ -292,6 +292,13 @@ a{color:inherit;text-decoration:none}
   font:var(--type-label-3xs);letter-spacing:var(--type-label-3xs-ls);text-transform:uppercase}
 .foot-links a{opacity:.75}
 .foot-links a:hover{opacity:1}
+/* Selector de idioma: cada idioma es su propia pagina, asi que el subrayado
+   lo marca aria-current en el HTML servido y no hace falta JS. */
+.foot-links .lang{display:flex;align-items:center;gap:.4rem;margin-top:.35rem}
+.foot-links .lang .ic-globe{width:13px;height:13px;flex:none;opacity:.75}
+.foot-links .lang span{opacity:.45}
+.foot-links .lang a[aria-current]{opacity:1;
+  border-bottom:1px solid currentColor;padding-bottom:2px}
 .foot-iso{width:clamp(56px,7vw,86px);color:var(--orange)}
 .to-top{width:38px;height:38px;border:1px solid rgba(233,232,225,.5);border-radius:50%;
   display:grid;place-items:center;flex:none}

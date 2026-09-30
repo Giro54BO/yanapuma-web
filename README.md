@@ -15,11 +15,28 @@ HTML, CSS y JavaScript puros. Sin framework, sin dependencias, sin proceso de
 build. La única petición externa es Google Fonts.
 
 ```
-index.html    La home completa
-css/          styles.css
-js/           main.js
-assets/       img · svg · video
+index.html       La home, en castellano
+en/index.html    La misma home, en inglés (generada)
+css/             styles.css
+js/              main.js
+assets/          img · svg · video
+tools/           build-en.py
 ```
+
+## Los dos idiomas
+
+Cada idioma tiene su URL —`/` y `/en/`— en vez de conmutarse con JavaScript:
+así el inglés sale en el HTML servido, funciona sin JS y no parpadea al cargar.
+
+Para no mantener dos archivos a mano, el inglés se **genera** desde el
+castellano. Después de tocar `index.html`:
+
+```
+python3 tools/build-en.py
+```
+
+La tabla de traducción vive dentro del script. Si aparece texto castellano
+nuevo que no está en la tabla, el script lo enumera y se niega a escribir.
 
 ## Secciones
 
