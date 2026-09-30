@@ -1,41 +1,46 @@
-# Yanapuma — Propuestas de diseño web
+# Yanapuma Wildlife Sanctuary — Home
 
-Dos direcciones de diseño para la home de **Yanapuma Wildlife Sanctuary**, reserva
-privada de conservación en la zona de amortiguamiento del Parque Nacional Amboró
+Página de inicio para **Yanapuma Wildlife Sanctuary**, reserva privada de
+conservación en la zona de amortiguamiento del Parque Nacional Amboró
 (Santa Cruz, Bolivia).
 
-| | Archivo | Carácter |
-|---|---|---|
-| **Opción A** | [`index.html`](index.html) | Editorial y ordenada. Cabecera fija, pilares en rejilla, bloques imagen + texto. |
-| **Opción B** | [`index-b.html`](index-b.html) | Inmersiva. Riel lateral fijo, hero a pantalla completa, divisores ondulados, lista numerada y marquesina. |
+**Vista publicada:** https://giro54bo.github.io/yanapuma-web/
+
+De las dos direcciones que se presentaron, el cliente eligió la opción B. Es la
+que vive en este repositorio; la opción A se retiró.
 
 ## Stack
 
-HTML, CSS y JavaScript puros. Sin framework, sin dependencias, sin proceso de build.
-La única petición externa es Google Fonts.
+HTML, CSS y JavaScript puros. Sin framework, sin dependencias, sin proceso de
+build. La única petición externa es Google Fonts.
 
 ```
-index.html        Opción A
-index-b.html      Opción B
-css/              styles.css (A) · styles-b.css (B)
-js/               main.js (A) · main-b.js (B)
-assets/           img · video · svg
+index.html    La home completa
+css/          styles.css
+js/           main.js
+assets/       img · svg · video
 ```
 
-## Marca
+## Secciones
 
-- **Paleta:** Verde Olivo `#424530` y Naranja `#E09132`, más neutros derivados.
-- **Tipografía:** Arima Madurai (titulares) + Archivo (texto).
+La Reserva · El Modelo · Conservación (con el bloque de Restauración) ·
+Observación de aves · Cómo se financia la conservación · Experiencias ·
+Estadía · Café Tigre Negro · Cómo llegar
 
-## Ver en local
+## Notas
 
-```bash
-python3 -m http.server 4173
-```
-
-Luego abrir <http://localhost:4173/index.html> o <http://localhost:4173/index-b.html>.
+- **Pantalla de bienvenida.** En la primera visita el isotipo se arma pieza por
+  pieza sobre fondo olivo. Queda registrada en `localStorage`
+  (`yanapuma.welcomed`); borrar esa clave la vuelve a mostrar.
+- **Tipografía.** Archivo en todo el sitio. Arima Madurai queda reservada para
+  el logotipo.
+- **Color.** Verde olivo `#424530` y naranja `#E09132`, con sus neutros
+  derivados.
+- **Pendiente de contenido.** Montos de auspicio, número de cámaras trampa, qué
+  animales admiten auspicio y las condiciones de los voluntariados. El botón de
+  donación a la reforestación lleva a contacto: la primera versión no incluye
+  pasarela de pago.
 
 ---
 
-Trabajo de [Giro54](https://github.com/Giro54BO). Contenido y material gráfico
-propiedad de Yanapuma Wildlife Sanctuary.
+Desarrollo: [Giro54](https://github.com/Giro54BO)
