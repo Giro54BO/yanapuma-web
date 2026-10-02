@@ -100,6 +100,26 @@
     });
   });
 
+  /* Aves: cada grupo muestra la foto de la especie elegida */
+  Array.prototype.forEach.call(document.querySelectorAll('.bird-pick'), function (g) {
+    var fig = g.querySelector('.bird-ph'), img = fig.querySelector('img'),
+        cred = fig.querySelector('figcaption a'),
+        bs = Array.prototype.slice.call(g.querySelectorAll('button'));
+    bs.forEach(function (b) {
+      b.addEventListener('click', function () {
+        bs.forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)); });
+        var src = b.getAttribute('data-src');
+        fig.classList.toggle('is-empty', !src);
+        img.hidden = cred.hidden = !src;
+        if (!src) return;
+        img.src = src;
+        img.alt = b.textContent;
+        cred.href = b.getAttribute('data-href');
+        cred.textContent = b.getAttribute('data-credit');
+      });
+    });
+  });
+
   /* Marquesina: se duplica el contenido para que el bucle no corte */
   var track = document.querySelector('.marquee-t');
   if (track) track.innerHTML += track.innerHTML;

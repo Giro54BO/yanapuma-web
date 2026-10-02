@@ -165,6 +165,8 @@ TEXTOS = {
     " en eBird; la reserva tiene además otros puntos registrados. Allí el Buff-fronted Owl aparece 231 veces más frecuente que la media de la región. Relevamiento de campo de Raúl Navi, guía de observación de aves.":
         " hotspot on eBird; the reserve has other registered points as well. There the Buff-fronted Owl is 231 times more frequent than the regional average. Field survey by Raúl Navi, birding guide.",
     "Ver el hotspot en eBird": "View the hotspot on eBird",
+    "Foto pendiente": "Photo coming soon",
+    "Foto: ": "Photo: ",
 
     # --- como se financia ---
     "El modelo sigue creciendo.": "The model keeps growing.",
@@ -273,7 +275,7 @@ TEXTOS = {
 
 # Bloques que solo tienen sentido en castellano.
 FUERA = [
-    '<p class="note">Los nombres se mantienen en inglés, que es como se '
+    '\n          <p class="note">Los nombres se mantienen en inglés, que es como se '
     'catalogan y buscan internacionalmente.</p>',
 ]
 

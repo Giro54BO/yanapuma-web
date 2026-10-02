@@ -348,13 +348,31 @@ body.locked{overflow:hidden}
 .zone b{font:var(--type-label-sm);letter-spacing:var(--type-label-sm-ls);text-transform:uppercase;
   opacity:.6;padding-top:.2rem}
 .zone span{font:var(--type-sm)}
-.spp{display:flex;flex-direction:column;gap:1.4rem}
+/* Un solo hueco entre bloques: los dos grupos de aves, las cifras y las notas
+   quedan a la misma distancia y nunca se tocan. */
+.spp{display:flex;flex-direction:column;gap:clamp(2.4rem,5vw,3.2rem)}
 .spp h3{font:var(--type-label-sm);letter-spacing:var(--type-label-sm-ls);
-  text-transform:uppercase;opacity:.6;margin-bottom:.6rem}
+  text-transform:uppercase;opacity:.6;margin-bottom:.9rem}
 .spp ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.45rem}
-.spp li{font:var(--type-xs);border:1px solid rgba(233,232,225,.28);border-radius:999px;
-  padding:.32rem .78rem;white-space:nowrap}
+.spp .notes{display:flex;flex-direction:column;gap:.9rem}
 .spp .note{font:var(--type-xs);opacity:.72;max-width:42ch}
+/* Selector de especie: la foto va encima de los botones, con la proporcion
+   de las imagenes de Experiencias. El credito es obligatorio por la licencia. */
+.bird-ph{margin:0 0 1rem}
+.bird-ph img,.bird-none{width:100%;height:clamp(200px,26vw,300px);border-radius:4px}
+.bird-ph img{object-fit:cover;object-position:50% 30%}  /* las aves posan arriba del encuadre */
+.bird-ph [hidden]{display:none}  /* img lleva display:block global */
+.bird-none{display:none;align-items:center;justify-content:center;
+  border:1px dashed rgba(233,232,225,.28);font:var(--type-xs);opacity:.6}
+.bird-ph.is-empty .bird-none{display:flex}
+.bird-ph figcaption{font:var(--type-2xs);opacity:.55;margin-top:.5rem;min-height:1.5em}
+.bird-ph figcaption a:hover{opacity:1;text-decoration:underline}
+.bird-pick button{font:var(--type-xs);color:inherit;background:none;cursor:pointer;
+  border:1px solid rgba(233,232,225,.28);border-radius:999px;
+  padding:.32rem .78rem;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.bird-pick button:hover{border-color:rgba(233,232,225,.7)}
+.bird-pick button[aria-pressed="true"]{background:var(--on-dark);color:var(--olive);border-color:var(--on-dark)}
+.bird-pick button:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
 .spp .pill{align-self:flex-start}
 @media (max-width:860px){.birds-g{grid-template-columns:1fr}.zone{grid-template-columns:1fr}}
 
