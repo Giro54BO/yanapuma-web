@@ -28,16 +28,16 @@
   --fs-marquee:clamp(1.5rem,3.6vw,2.6rem); /* Marquesina */
   --fs-lead:clamp(1rem,1.9vw,1.35rem); /* Frase de cierre del pie */
   --fs-stat:2rem;             /* Cifras destacadas */
-  --fs-lg:1.05rem;            /* Texto destacado */
-  --fs-md:1rem;               /* Titulos de tarjeta */
-  --fs-body:0.95rem;          /* Texto corrido */
-  --fs-sm:0.92rem;            /* Texto secundario */
-  --fs-xs:0.86rem;            /* Notas y descripciones */
-  --fs-2xs:0.76rem;           /* Texto auxiliar */
-  --fs-3xs:0.72rem;           /* Etiquetas */
-  --fs-4xs:0.67rem;           /* Versalitas de interfaz */
-  --fs-5xs:0.61rem;           /* Etiquetas minimas */
-  --fs-root:16px;             /* Base del documento */
+  --fs-lg:1.0625rem;          /* Texto destacado */
+  --fs-md:1.0625rem;          /* Titulos de tarjeta */
+  --fs-body:1.0625rem;        /* Texto corrido (17px) */
+  --fs-sm:1.0625rem;          /* Texto secundario */
+  --fs-xs:1.0625rem;          /* Notas y descripciones */
+  --fs-2xs:1.0625rem;         /* Texto auxiliar */
+  --fs-3xs:1.0625rem;         /* Etiquetas */
+  --fs-4xs:1.0625rem;         /* Versalitas de interfaz */
+  --fs-5xs:1.0625rem;         /* Etiquetas minimas */
+  --fs-root:17px;             /* Base del documento */
 
   /* Familia unica. Arima Madurai queda reservada al logotipo, que es SVG
      vectorizado y por tanto no necesita cargar la fuente. */
@@ -176,7 +176,7 @@ a{color:inherit;text-decoration:none}
 .step-p{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.4rem,4vw,3rem);padding:.4rem 0 2rem}
 .step-p img{width:100%;height:clamp(200px,26vw,300px);object-fit:cover;border-radius:4px}
 .step-p ul{margin:0;padding-left:1.1rem;display:flex;flex-direction:column;gap:.6rem;
-  font:var(--type-sm);max-width:44ch}
+  font:var(--type-body);max-width:44ch}
 @media (max-width:760px){.step-p{grid-template-columns:1fr}.step-b{grid-template-columns:1.8rem 1fr}.step-b .k{display:none}}
 
 /* ---------- Bloque con foto inclinada ---------- */
@@ -273,7 +273,18 @@ a{color:inherit;text-decoration:none}
 
 .figs-b b{display:block;font:var(--type-stat)}
 .figs-b span{font:var(--type-2xs);opacity:.7}
-@media (max-width:860px){.map-b{grid-template-columns:1fr}}
+/* En una columna el mapa ya no es mas alto que el texto: el svg recupera su
+   proporcion (sin height:auto conserva los 761px del atributo y deja aire
+   arriba y abajo) y el bloque vuelve al relleno de .blk, el mismo que deja
+   el cafe bajo su ultimo elemento antes del filete. */
+@media (max-width:860px){
+  .map-b{grid-template-columns:1fr}
+  .map-b img{width:100%;height:auto}
+  .map-blk{padding-block:clamp(3rem,7vw,6rem)}
+  /* El filete sube lo mismo que el relleno: queda en la juntura, con el
+     mismo aire encima (relleno del cafe) que debajo (relleno del mapa). */
+  .map-blk .map-b::before{top:calc(-1 * clamp(3rem,7vw,6rem))}
+}
 
 /* ---------- Pie grande ---------- */
 .foot-b{background:var(--olive);color:var(--on-dark);padding:clamp(2.6rem,6vw,5rem) 0 clamp(1.6rem,3vw,2.4rem)}
@@ -414,6 +425,7 @@ body.pl-lock{overflow:hidden}
 /* Debe ir después de la regla base de .hero-in: misma especificidad, gana la última. */
 @media (max-width:820px){
   .hero-in{padding-bottom:calc(52px + 2.6rem)}
+  .foot-b{padding-bottom:calc(52px + clamp(1.6rem,3vw,2.4rem))}
 }
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
