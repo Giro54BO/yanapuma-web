@@ -192,7 +192,12 @@ TEXTOS = {
     "Auspicio de animales rescatados": "Rescued animal sponsorship",
     "Auspicia a un animal del centro de rescate y recibe cada mes un informe de cómo avanza su recuperación y su enriquecimiento.":
         "Sponsor an animal at the rescue centre and receive a monthly report on how its recovery and enrichment are progressing.",
-    "Consultar cualquiera de estas vías": "Ask about any of these",
+    "Consultar sobre el aporte mensual": "Ask about the monthly contribution",
+    "Registro de una cámara trampa de la reserva": "Footage from one of the reserve's camera traps",
+    "Ver los tours": "See the tours",
+    "Sobre el café": "About the coffee",
+    "Consultar sobre el voluntariado": "Ask about volunteering",
+    "Consultar sobre aportes": "Ask about contributions",
 
     # --- marquesina ---
     "Jaguar · Puma · Oso jucumari · Aves · Reptiles · Pequeños mamíferos · Bosque nublado · Microclimas ·":
@@ -231,6 +236,9 @@ TEXTOS = {
     "a la taza": "to the cup",
     "Al jaguar se lo llama tigre. En la leyenda del Yanapuma su nombre va a veces precedido de Tigrenegro: dos maneras de decir lo mismo. De ahí lo toma el café de la reserva.":
         "The jaguar is colloquially called a tiger. In the Yanapuma legend its name is sometimes preceded by Tigrenegro, black tiger: two ways of saying the same thing. That is where the reserve's coffee takes its name.",
+    "El café nació de la conservación, no al revés. Del bosque a la taza. 1% cultivado 99% conservado.":
+        "The coffee was born of conservation, not the other way round. From forest to cup. 1% cultivated, 99% conserved.",
+    "Centro de Rescate.": "Rescue Centre.",
     "El café nació de la conservación, no al revés. Para recuperar los terrenos desmontados había que volver a plantarlos, y el cultivo bajo sombra permitió hacerlo produciendo.":
         "The coffee grew out of the conservation work, not the other way round. Recovering the cleared ground meant planting it again, and growing under shade made it possible to do that productively.",
     "Los cafetales crecen entre los 1.400 y los 1.750 metros, en suelos de terroirs distintos. La reserva cuenta con centro de beneficio propio y un banco genético de variedades exóticas de alto potencial en taza.":

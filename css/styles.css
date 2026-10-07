@@ -414,6 +414,10 @@ body.locked{overflow:hidden}
 .src p{font:var(--type-xs);opacity:.8}
 .src .tag{margin-top:auto;padding-top:.8rem;font:var(--type-label-xs);
   letter-spacing:var(--type-label-xs-ls);text-transform:uppercase;color:var(--orange-d)}
+/* Cada via lleva su propia llamada al pie; el texto puede partirse en dos
+   lineas porque la columna es angosta y las etiquetas van en mayusculas. */
+.src-cta{display:flex;flex-direction:column;align-items:flex-start;gap:.7rem;padding-top:.6rem}
+.src-cta .btn-2{white-space:normal;text-align:left}
 
 /* ---------- Pantalla de bienvenida ---------- */
 /* Construccion del isotipo: cada uno de sus 164 trazados llega volando desde
