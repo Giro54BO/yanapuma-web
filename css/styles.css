@@ -27,6 +27,7 @@
   --fs-nav:clamp(1.8rem,5.5vw,3.4rem); /* Enlaces del menu a pantalla completa */
   --fs-marquee:clamp(1.5rem,3.6vw,2.6rem); /* Marquesina */
   --fs-lead:clamp(1rem,1.9vw,1.35rem); /* Frase de cierre del pie */
+  --fs-btn:clamp(.875rem,.8rem + .3vw,1rem); /* Botones: nunca menos de 14px */
   --fs-stat:2rem;             /* Cifras destacadas */
   --fs-lg:1.0625rem;          /* Texto destacado */
   --fs-md:1.0625rem;          /* Titulos de tarjeta */
@@ -61,7 +62,7 @@
   --type-xs:400 var(--fs-xs)/1.55 var(--font-sans);             --type-xs-ls:normal;
   --type-2xs:400 var(--fs-2xs)/1.5 var(--font-sans);            --type-2xs-ls:normal;
   --type-italic:italic 400 var(--fs-sm)/1.6 var(--font-sans);   --type-italic-ls:normal;
-  --type-btn:italic 500 var(--fs-xs)/1 var(--font-sans);        --type-btn-ls:.09em;
+  --type-btn:500 var(--fs-btn)/1 var(--font-sans);              --type-btn-ls:.03em;
   --type-address:400 var(--fs-sm)/1.7 var(--font-sans);         --type-address-ls:normal;
 
   /* Versalitas */
@@ -130,6 +131,20 @@ a{color:inherit;text-decoration:none}
 .pill:hover span:not(.circ){color:var(--paper)}
 .on-olive .pill:hover span:not(.circ){color:var(--olive)}
 
+/* ---------- Botón secundario ---------- */
+/* Misma letra y mismo círculo que la píldora, pero sin el contorno exterior:
+   pesa menos al lado de un botón principal. Al pasar, se rellena solo el círculo. */
+.btn-2{display:inline-flex;align-items:center;gap:.7rem;padding:0;border:0;background:none;
+  color:inherit;cursor:pointer;white-space:nowrap;
+  font:var(--type-btn);letter-spacing:var(--type-btn-ls);text-transform:uppercase}
+.btn-2 .circ{width:26px;height:26px;border:1px solid currentColor;border-radius:50%;flex:none;
+  display:grid;place-items:center;transition:background .2s}
+.btn-2 .circ svg{width:13px;height:13px;transition:color .2s}
+.btn-2:hover .circ{background:currentColor}
+.btn-2:hover .circ svg{color:var(--paper)}
+.btn-2 span:not(.circ){padding-block:.2rem;border-bottom:1px solid transparent;transition:border-color .2s}
+.btn-2:hover span:not(.circ){border-color:currentColor}
+
 /* ---------- Ondas divisorias ---------- */
 .wave{display:block;width:100%;height:clamp(48px,7vw,110px);margin-bottom:-1px}
 .wave.flip{transform:scaleY(-1);margin-top:-1px;margin-bottom:0}
@@ -145,9 +160,15 @@ a{color:inherit;text-decoration:none}
 .hero-b .brand{color:var(--on-dark)}
 .hero-b .brand svg{width:clamp(180px,20.4vw,264px);height:auto}
 .hero-b .display{color:var(--on-dark)}
-.scroll-cue{width:40px;height:40px;border:1px solid rgba(233,232,225,.6);border-radius:50%;
-  display:grid;place-items:center;color:var(--on-dark);margin-top:1.6rem}
-.scroll-cue svg{width:15px;height:15px}
+/* Titular del hero: 3/4 del tamaño base en escritorio, la mitad en móvil (más video a la vista) */
+.hero-b .display{font-size:clamp(2.175rem,6.15vw,5.25rem)}
+@media (max-width:820px){.hero-b .display{font-size:clamp(1.45rem,4.1vw,3.5rem)}}
+.hero-note{position:absolute;z-index:3;top:clamp(1.4rem,3vw,2.2rem);right:clamp(1.2rem,3vw,2.2rem);
+  display:flex;align-items:center;gap:.45rem;
+  margin:0;padding:.4rem .75rem;border-radius:999px;background:rgba(34,37,26,.55);
+  color:var(--on-dark);font:400 var(--fs-btn)/1.2 var(--font-sans);letter-spacing:var(--type-btn-ls)}
+.hero-note svg{width:1.05em;height:1.05em;flex:none;color:var(--orange)}
+@media (max-width:820px){.hero-note{top:5rem}}  /* bajo el logo */
 
 /* ---------- Bloques ---------- */
 .blk{padding:clamp(3rem,7vw,6rem) 0}
@@ -221,6 +242,7 @@ a{color:inherit;text-decoration:none}
 .card3 img{width:100%;height:clamp(160px,17vw,210px);object-fit:cover;border-radius:3px}
 .card3 h3{font:var(--type-card);letter-spacing:var(--type-card-ls)}
 .card3 p{font:var(--type-sm);opacity:.82}
+.card3 .btn-2{align-self:flex-start;margin-top:auto;padding-top:.35rem}
 @media (max-width:900px){.cards3{grid-template-columns:1fr;border-top:0}
   .card3{border-right:0;border-bottom:1px solid rgba(34,37,26,.22);padding:1.4rem 0!important}}
 
@@ -253,7 +275,7 @@ a{color:inherit;text-decoration:none}
 .rewild .pill{align-self:flex-start;margin-top:.7rem}
 @media (max-width:860px){.rewild{grid-template-columns:1fr}}
 
-/* ---------- Cafe Tigre Negro ---------- */
+/* ---------- Cafe Tigrenegro ---------- */
 /* La foto es vertical, asi que la columna de imagen va mas angosta y mas alta
    que en .tilt-g: recortar un retrato a una banda apaisada le quita el gesto. */
 .cafe-g{display:grid;grid-template-columns:.72fr 1fr;
@@ -429,6 +451,44 @@ body.pl-lock{overflow:hidden}
 @media (prefers-reduced-motion:reduce){
   .pl-mark path,.pl-mark polygon{animation:none;opacity:1}
   .pl-bar i{animation-duration:.45s}
+}
+
+/* ---------- Galería de senderos ---------- */
+/* El <dialog> ocupa toda la pantalla y es transparente: el velo lo pone
+   ::backdrop, y un clic en el hueco alrededor de la foto cierra la ventana.
+   El ancho sale del alto disponible para que foto y controles quepan sin
+   desplazarse: 12.5rem es lo que suman el relleno, el título y los controles. */
+.gal-m{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;
+  margin:0;padding:clamp(1rem,4vw,2.5rem);border:0;overflow:auto;
+  background:transparent;color:var(--on-dark)}
+.gal-m[open]{display:flex;align-items:center;justify-content:center;animation:galIn .3s ease both}
+.gal-m::backdrop{background:rgba(34,37,26,.95);animation:galVelo .3s ease both}
+.gal-in{width:min(1040px,100%,calc((100svh - 12.5rem) * 1.5));
+  display:flex;flex-direction:column;gap:1rem}
+.gal-top,.gal-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.gal-nav[hidden]{display:none}
+.gal-t{font:var(--type-card);letter-spacing:var(--type-card-ls)}
+.gal-stage{overflow:hidden;touch-action:pan-y}   /* el deslizamiento lateral lo maneja JS */
+.gal-track{display:flex;transition:transform .45s cubic-bezier(.3,.7,.3,1)}
+.gal-sl{flex:0 0 100%;margin:0;aspect-ratio:3/2}
+.gal-sl img{width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+/* Mismo aviso que las aves sin foto. */
+.gal-none{height:100%;display:flex;align-items:center;justify-content:center;
+  border:1px dashed rgba(233,232,225,.28);border-radius:4px;font:var(--type-xs);opacity:.6}
+.gal-n{font:var(--type-xs);opacity:.7;font-variant-numeric:tabular-nums}
+.gal-arr{display:flex;gap:.6rem}
+/* Controles: el círculo fino con trazo de .to-top. */
+.gal-b{width:40px;height:40px;padding:0;border:1px solid rgba(233,232,225,.6);border-radius:50%;
+  flex:none;display:grid;place-items:center;background:none;color:inherit;cursor:pointer;
+  transition:background .2s,color .2s,border-color .2s}
+.gal-b svg{width:15px;height:15px}
+.gal-b:hover{background:var(--on-dark);border-color:var(--on-dark);color:var(--olive-dd)}
+@keyframes galIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes galVelo{from{opacity:0}to{opacity:1}}
+/* En el teléfono la foto va más alta: casi todas las del celular son verticales. */
+@media (max-width:640px){
+  .gal-in{width:min(100%,calc((100svh - 12.5rem) * .8))}
+  .gal-sl{aspect-ratio:4/5}
 }
 
 /* ---------- Botones a bloque en móvil ---------- */

@@ -1475,7 +1475,7 @@
 <!-- Predios: subtítulos y Piedras Blancas -->
 <g font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" fill="#424530">
 	<text x="1051" y="636" font-size="19" font-weight="600">Volcanes · 900 ha · 2019</text>
-	<text x="1051" y="658" font-size="16">Centro principal de la reserva</text>
+	<text x="1051" y="658" font-size="16">Main centre of the reserve</text>
 </g>
 <circle class="st4" cx="713" cy="630" r="19.4"/>
 <circle class="st6" cx="713" cy="630" r="13"/>
@@ -1483,6 +1483,6 @@
 <use href="#lbl-y" xlink:href="#lbl-y" transform="translate(-281,189)"/>
 <g font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" fill="#424530">
 	<text x="770" y="825" font-size="19" font-weight="600">Piedras Blancas · 200 ha · 2026</text>
-	<text x="770" y="847" font-size="16">Área de conservación y reforestación</text>
+	<text x="770" y="847" font-size="16">Conservation and reforestation area</text>
 </g>
 </svg>

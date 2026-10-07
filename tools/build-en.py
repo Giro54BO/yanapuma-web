@@ -42,7 +42,6 @@ TEXTOS = {
     "Cerrar menú": "Close menu",
     "Principal": "Main",
     "Volver arriba": "Back to top",
-    "Bajar al contenido": "Scroll to content",
     "Vuelo sobre los farallones de arenisca cubiertos de bosque":
         "Flight over the forested sandstone cliffs",
 
@@ -67,7 +66,7 @@ TEXTOS = {
         "81 km from Santa Cruz de la Sierra, on the road to Samaipata and within the buffer zone of Amboró National Park, Yanapuma safeguards an extraordinary composition of landscapes, microclimates and wildlife.",
     "En las tradiciones andino-amazónicas, Yanapuma es el felino negro que habita y protege la naturaleza: una figura vinculada al equilibrio del territorio y a la idea de que el bosque merece respeto.":
         "In Andean-Amazonian tradition, Yanapuma is the black cat that inhabits and protects nature: a figure tied to the balance of the territory and to the idea that the forest deserves respect.",
-    "Ese significado encontró un lugar propio en esta reserva, que nace en 2019 sobre 900 hectáreas donde paisajes, vegetación y condiciones naturales cambian en distancias sorprendentemente cortas.":
+    "Ese significado encontró un lugar propio en esta reserva, que nace en 2019 sobre 900 hectáreas donde paisajes, vegetación y condiciones naturales que cambian en distancias sorprendentemente cortas.":
         "That meaning found a home of its own in this reserve, born in 2019 across 900 hectares where landscapes, vegetation and natural conditions change over surprisingly short distances.",
     "Conocer la reserva": "Explore the reserve",
 
@@ -88,8 +87,8 @@ TEXTOS = {
         "Trails, lookouts and sightings designed to follow nature's own pace.",
     "Cuatro senderos principales y dos trayectos cortos, adaptados a distintos niveles de caminata.":
         "Four main trails and two short routes, suited to different levels of walking.",
-    "Cada visita se coordina previamente y se realiza con guías especializados. Los cupos diarios son limitados.":
-        "Every visit is arranged in advance and led by specialist guides. Daily places are limited.",
+    "Cada visita se coordina previamente y se realiza con guías especializados. Los cupos son limitados.":
+        "Every visit is arranged in advance and led by specialist guides. Places are limited.",
     "Protección activa": "Active protection",
     "La labor": "The work",
     "Recuperación del territorio y un centro dedicado a la rehabilitación de animales silvestres.":
@@ -108,8 +107,10 @@ TEXTOS = {
         "All the timber comes from trees that fell or were damaged naturally within the territory itself.",
     "Sostenibilidad en origen": "Sustainability at source",
     "La producción": "Production",
-    "Café Tigre Negro, una iniciativa productiva que financia directamente la labor de Yanapuma.":
-        "Café Tigre Negro, a production venture that funds Yanapuma's work directly.",
+    "Café Tigrenegro, una iniciativa productiva que financia directamente la labor de Yanapuma.":
+        "Café Tigrenegro, a production venture that funds Yanapuma's work directly.",
+    "Como restricción autoimpuesta, Yanapuma solo puede producir sobre el 1% del total de la tierra que conserva, y únicamente en chacos antiguos, con el propósito de reforestarlos hasta alcanzar un 30% de sombra.":
+        "As a self-imposed limit, Yanapuma may farm no more than 1% of the land it protects, and only on old cleared plots (chacos), with the aim of reforesting them up to 30% shade cover.",
     "Prioriza la excelencia en taza y el respeto por el suelo antes que el volumen de producción.":
         "It puts cup quality and respect for the soil ahead of volume.",
     "El complejo procesa además las cosechas de caficultores vecinos, integrando a la comunidad local al modelo.":
@@ -128,12 +129,12 @@ TEXTOS = {
 
     # --- restauracion ---
     "Restauración": "Restoration",
-    "Siete hectáreas": "Seven hectares",
+    "Veinte hectáreas": "Twenty hectares",
     "que vuelven al bosque": "returning to forest",
     "El proyecto abarca 1.100 hectáreas distribuidas en dos propiedades: Volcanes y Piedras Blancas.":
         "The project covers 1,100 hectares across two properties: Volcanes and Piedras Blancas.",
-    "Siete de esas hectáreas están deforestadas y hoy se encuentran en proceso de restauración. El objetivo es devolverles cobertura boscosa hasta que vuelvan a integrarse al bosque que las rodea.":
-        "Seven of those hectares were deforested and are now being restored. The aim is to bring back forest cover until they rejoin the woodland around them.",
+    "Veinte de esas hectáreas están deforestadas y hoy se encuentran en proceso de restauración. El objetivo es devolverles cobertura boscosa hasta que vuelvan a integrarse al bosque que las rodea.":
+        "Twenty of those hectares were deforested and are now being restored. The aim is to bring back forest cover until they rejoin the woodland around them.",
     "1.100 ha": "1,100 ha",
     "Superficie del proyecto": "Project area",
     "En restauración": "Under restoration",
@@ -146,8 +147,8 @@ TEXTOS = {
     "La topografía de montaña, sin planicies, facilita encontrar y seguir a las aves. Cada zona de la reserva ofrece algo distinto según la hora del día.":
         "Mountain topography, with no flat ground, makes birds easier to find and follow. Each part of the reserve offers something different depending on the time of day.",
     "Mirador": "Lookout",
-    "Rapaces, colibríes y tangaras durante la mañana.":
-        "Raptors, hummingbirds and tanagers through the morning.",
+    "Rapaces, entre ellas el Águila Arpía, además de colibríes y tangaras durante la mañana.":
+        "Raptors, including the Harpy Eagle, plus hummingbirds and tanagers through the morning.",
     "Camino a la cascada": "Trail to the waterfall",
     "Pavas de monte y tinamúes. También grupos de monos capuchinos, poco esquivos.":
         "Guans and tinamous. Also troops of capuchin monkeys, not especially shy.",
@@ -177,12 +178,12 @@ TEXTOS = {
         "Sponsor one of the reserve's camera traps. Each month we share the images it recorded: who passed by, and at what hour.",
     "Aporte mensual": "Monthly contribution",
     "Tours guiados": "Guided tours",
-    "Recorridos por senderos, cascadas y miradores, siempre acompañados por personal de la reserva y con cupos diarios limitados.":
-        "Walks along trails, waterfalls and lookouts, always accompanied by reserve staff and with limited daily places.",
+    "Recorridos por senderos, cascadas y miradores, siempre acompañados por personal de la reserva y con cupos limitados.":
+        "Walks along trails, waterfalls and lookouts, always accompanied by reserve staff and with limited places.",
     "Con reserva previa": "By prior booking",
     "Compra de café": "Coffee purchase",
-    "Café Tigre Negro, cultivado bajo sombra dentro de la reserva. El beneficio se destina directamente al resguardo del territorio.":
-        "Café Tigre Negro, grown under shade inside the reserve. The proceeds go directly to protecting the territory.",
+    "Café Tigrenegro, cultivado bajo sombra dentro de la reserva. El beneficio se destina directamente al resguardo del territorio.":
+        "Café Tigrenegro, grown under shade inside the reserve. The proceeds go directly to protecting the territory.",
     "Compra directa": "Direct purchase",
     "Voluntariados": "Volunteering",
     "Estancias de trabajo junto al equipo, en tareas de conservación, reforestación y apoyo al centro de rescate.":
@@ -200,15 +201,19 @@ TEXTOS = {
     # --- experiencias ---
     "Vivir la naturaleza": "Living nature",
     "y su calma": "and its calm",
-    "Cascadas y pozas": "Waterfalls and pools",
+    "Sendero Cascada Flor de Oro": "Flor de Oro Waterfall Trail",
     "Descender hacia cascadas escondidas y pozas flanqueadas por paredones de piedra.":
         "Descending to hidden waterfalls and pools flanked by walls of stone.",
-    "Observación de fauna": "Wildlife watching",
+    "Sendero Parque Amboró Zona Norte": "Amboró Park North Zone Trail",
     "Aquí la fauna habita en libertad: los avistamientos no se fuerzan, se descubren con paciencia y silencio.":
         "Here wildlife lives free: sightings are not staged, they are found with patience and silence.",
-    "Cafetales de la reserva": "The reserve's coffee groves",
+    "Sendero Mataracú": "Mataracú Trail",
     "Aproximarse a la zona de Volcanes y a los cafetales bajo sombra de la reserva.":
         "Getting close to the Volcanes area and the reserve's shade-grown coffee.",
+    "Ver imágenes": "See images",
+    "Cerrar galería": "Close gallery",
+    "Foto anterior": "Previous photo",
+    "Foto siguiente": "Next photo",
 
     # --- estadia ---
     "Habitar la reserva": "Inhabiting the reserve",
@@ -224,8 +229,8 @@ TEXTOS = {
     # --- cafe ---
     "Del bosque recuperado": "From recovered forest",
     "a la taza": "to the cup",
-    "Al jaguar se lo llama tigre. En la leyenda del Yanapuma su nombre va a veces precedido de Tigre Negro: dos maneras de decir lo mismo. De ahí lo toma el café de la reserva.":
-        "The jaguar is colloquially called a tiger. In the Yanapuma legend its name is sometimes preceded by Tigre Negro, black tiger: two ways of saying the same thing. That is where the reserve's coffee takes its name.",
+    "Al jaguar se lo llama tigre. En la leyenda del Yanapuma su nombre va a veces precedido de Tigrenegro: dos maneras de decir lo mismo. De ahí lo toma el café de la reserva.":
+        "The jaguar is colloquially called a tiger. In the Yanapuma legend its name is sometimes preceded by Tigrenegro, black tiger: two ways of saying the same thing. That is where the reserve's coffee takes its name.",
     "El café nació de la conservación, no al revés. Para recuperar los terrenos desmontados había que volver a plantarlos, y el cultivo bajo sombra permitió hacerlo produciendo.":
         "The coffee grew out of the conservation work, not the other way round. Recovering the cleared ground meant planting it again, and growing under shade made it possible to do that productively.",
     "Los cafetales crecen entre los 1.400 y los 1.750 metros, en suelos de terroirs distintos. La reserva cuenta con centro de beneficio propio y un banco genético de variedades exóticas de alto potencial en taza.":
@@ -237,8 +242,6 @@ TEXTOS = {
     "A 81 km de Santa&nbsp;Cruz de la Sierra": "81 km from Santa&nbsp;Cruz de la Sierra",
     "Yanapuma se encuentra en un entorno vinculado al Parque Nacional Amboró. Para proteger la experiencia y preparar adecuadamente cada visita, el ingreso debe coordinarse previamente.":
         "Yanapuma sits in a setting tied to Amboró National Park. To protect the experience and prepare each visit properly, entry must be arranged in advance.",
-    "Superficie de la reserva": "Reserve area",
-    "Año de creación": "Year founded",
     "Coordinar visita": "Arrange a visit",
 
     # --- pie ---
@@ -269,8 +272,10 @@ TEXTOS = {
         "Open sky over the forested ranges",
     "Café recién preparado sirviéndose humeante en una taza":
         "Freshly brewed coffee being poured, steaming, into a cup",
-    "Mapa del Parque Nacional Amboró entre Cochabamba y Santa Cruz, con la ruta que pasa por Samaipata":
-        "Map of Amboró National Park between Cochabamba and Santa Cruz, with the road through Samaipata",
+    "Mapa del Parque Nacional Amboró entre Cochabamba y Santa Cruz, con la ruta que pasa por Samaipata y los predios de Yanapuma en Volcanes y Piedras Blancas":
+        "Map of Amboró National Park between Cochabamba and Santa Cruz, with the road through Samaipata and Yanapuma's Volcanes and Piedras Blancas properties",
+    "mapa-amboro.svg?v=": "mapa-amboro-en.svg?v=",
+    "Video de ejemplo, solo como referencia": "Sample video, for reference only",
 }
 
 # Bloques que solo tienen sentido en castellano.
@@ -322,7 +327,7 @@ def sobras(html):
         r"|\b(?:de|la|el|los|las|con|para|que|una|del|por|y|en)\b",
         re.I)
     guardar = ("Yanapuma", "Ambor", "Samaipata", "Santa Cruz", "Santa&nbsp;Cruz",
-               "Tigre Negro",
+               "Tigrenegro", "Flor de Oro", "Mataracú",
                "Bolivia", "Volcanes", "Piedras Blancas", "Navi", "eBird",
                "Owl", "Recurvebill", "Tapaculo", "Gnateater", "Toucanet",
                "Racket-tail", "terroir")
