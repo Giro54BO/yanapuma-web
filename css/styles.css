@@ -163,12 +163,6 @@ a{color:inherit;text-decoration:none}
 /* Titular del hero: 3/4 del tamaño base en escritorio, la mitad en móvil (más video a la vista) */
 .hero-b .display{font-size:clamp(2.175rem,6.15vw,5.25rem)}
 @media (max-width:820px){.hero-b .display{font-size:clamp(1.45rem,4.1vw,3.5rem)}}
-.hero-note{position:absolute;z-index:3;top:clamp(1.4rem,3vw,2.2rem);right:clamp(1.2rem,3vw,2.2rem);
-  display:flex;align-items:center;gap:.45rem;
-  margin:0;padding:.4rem .75rem;border-radius:999px;background:rgba(34,37,26,.55);
-  color:var(--on-dark);font:400 var(--fs-btn)/1.2 var(--font-sans);letter-spacing:var(--type-btn-ls)}
-.hero-note svg{width:1.05em;height:1.05em;flex:none;color:var(--orange)}
-@media (max-width:820px){.hero-note{top:5rem}}  /* bajo el logo */
 
 /* ---------- Bloques ---------- */
 .blk{padding:clamp(3rem,7vw,6rem) 0}

@@ -283,7 +283,6 @@ TEXTOS = {
     "Mapa del Parque Nacional Amboró entre Cochabamba y Santa Cruz, con la ruta que pasa por Samaipata y los predios de Yanapuma en Volcanes y Piedras Blancas":
         "Map of Amboró National Park between Cochabamba and Santa Cruz, with the road through Samaipata and Yanapuma's Volcanes and Piedras Blancas properties",
     "mapa-amboro.svg?v=": "mapa-amboro-en.svg?v=",
-    "Video de ejemplo, solo como referencia": "Sample video, for reference only",
 }
 
 # Bloques que solo tienen sentido en castellano.
