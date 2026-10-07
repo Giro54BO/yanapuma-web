@@ -303,7 +303,7 @@ def construir(html):
         html = html.replace(es, en)
 
     # La pagina vive un nivel mas abajo, asi que los recursos suben uno.
-    html = re.sub(r'(href|src|content)="(css/|js/|assets/)', r'\1="../\2', html)
+    html = re.sub(r'(href|src|content|poster)="(css/|js/|assets/)', r'\1="../\2', html)
 
     # Idioma del documento y del grafo abierto.
     html = html.replace('<html lang="es">', '<html lang="en">', 1)
