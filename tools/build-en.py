@@ -44,6 +44,8 @@ TEXTOS = {
     "Volver arriba": "Back to top",
     "Vuelo sobre los farallones de arenisca cubiertos de bosque":
         "Flight over the forested sandstone cliffs",
+    "Recorrido por la reserva: vuelo sobre las serranías boscosas, los cafetales y el equipo de Yanapuma":
+        "A journey through the reserve: flying over the forested ranges, the coffee groves and the Yanapuma team",
 
     # --- navegacion ---
     "Conservación": "Conservation",
@@ -215,6 +217,14 @@ TEXTOS = {
     "Sendero Mataracú": "Mataracú Trail",
     "Aproximarse a la zona de Volcanes y a los cafetales bajo sombra de la reserva.":
         "Getting close to the Volcanes area and the reserve's shade-grown coffee.",
+    # --- postales ---
+    "Galería": "Gallery",
+    "Postales": "Postcards",
+    "de la reserva": "from the reserve",
+    "carrusel": "carousel",
+    "Fotos de la reserva": "Photos of the reserve",
+    "Ir a la foto": "Go to photo",
+
     "Ver imágenes": "See images",
     "Cerrar galería": "Close gallery",
     "Foto anterior": "Previous photo",
@@ -278,6 +288,8 @@ TEXTOS = {
         "A waterfall dropping into a clear pool",
     "Cielo abierto sobre las serranías boscosas":
         "Open sky over the forested ranges",
+    "Vista aérea de la reserva: bosque continuo, el camino de acceso y los farallones al fondo":
+        "Aerial view of the reserve: unbroken forest, the access road and the cliffs beyond",
     "Café recién preparado sirviéndose humeante en una taza":
         "Freshly brewed coffee being poured, steaming, into a cup",
     "Mapa del Parque Nacional Amboró entre Cochabamba y Santa Cruz, con la ruta que pasa por Samaipata y los predios de Yanapuma en Volcanes y Piedras Blancas":

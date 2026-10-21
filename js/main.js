@@ -205,6 +205,77 @@
     });
   })();
 
+  /* Postales: galería en abanico. La activa va al frente y las demás se abren
+     en arco a los lados; la lista es circular. A cada tarjeta le damos su
+     desfase (--o) y su distancia (--a), y el CSS la coloca. Las que quedan
+     fuera del abanico se esconden, así el salto del final al principio
+     ocurre sin que se vea cruzar una foto. */
+  (function () {
+    var fan = document.querySelector('.fan');
+    if (!fan) return;
+    var cartas = [].slice.call(fan.querySelectorAll('.fan-c')),
+        puntos = [].slice.call(fan.querySelectorAll('.fan-dots button')),
+        escena = fan.querySelector('.fan-st'),
+        movil = window.matchMedia('(max-width: 640px)'),
+        n = cartas.length, i = Math.floor(n / 2), x0 = null, arrastre = false;
+
+    function pintar() {
+      var lado = movil.matches ? 2 : 3;
+      cartas.forEach(function (c, k) {
+        var o = ((k - i) % n + n) % n;
+        if (o > n / 2) o -= n;
+        var a = Math.abs(o);
+        c.style.setProperty('--o', o);
+        c.style.setProperty('--a', a);
+        c.style.zIndex = n - a;
+        c.classList.toggle('is-far', a > lado);
+        c.setAttribute('aria-hidden', String(o !== 0));
+      });
+      puntos.forEach(function (p, k) {
+        if (k === i) p.setAttribute('aria-current', 'true');
+        else p.removeAttribute('aria-current');
+      });
+    }
+
+    function ir(k) { i = (k + n) % n; pintar(); }
+
+    fan.querySelector('.fan-prev').addEventListener('click', function () { ir(i - 1); });
+    fan.querySelector('.fan-next').addEventListener('click', function () { ir(i + 1); });
+    puntos.forEach(function (p, k) { p.addEventListener('click', function () { ir(k); }); });
+    cartas.forEach(function (c, k) {
+      c.addEventListener('click', function () { if (!arrastre && k !== i) ir(k); });
+    });
+    fan.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') ir(i + 1);
+      else if (e.key === 'ArrowLeft') ir(i - 1);
+    });
+
+    // Deslizar con el dedo (o arrastrar con el ratón) pasa de foto; el clic
+    // que sigue a un arrastre no debe además saltar a la tarjeta soltada.
+    escena.addEventListener('pointerdown', function (e) { x0 = e.clientX; arrastre = false; });
+    escena.addEventListener('pointercancel', function () { x0 = null; });
+    escena.addEventListener('pointerup', function (e) {
+      if (x0 === null) return;
+      var dx = e.clientX - x0;
+      x0 = null;
+      if (Math.abs(dx) > 40) { arrastre = true; ir(i + (dx < 0 ? 1 : -1)); }
+    });
+
+    if (movil.addEventListener) movil.addEventListener('change', pintar);
+    pintar();
+
+    // Entrada: el abanico se abre cuando el bloque asoma en pantalla.
+    function abrir() {
+      fan.classList.add('is-in', 'is-opening');
+      setTimeout(function () { fan.classList.remove('is-opening'); }, 1500);
+    }
+    if (!('IntersectionObserver' in window)) { abrir(); return; }
+    var io = new IntersectionObserver(function (es) {
+      if (es[0].isIntersecting) { io.disconnect(); abrir(); }
+    }, { threshold: 0.3 });
+    io.observe(fan);
+  })();
+
   /* Marquesina: se duplica el contenido para que el bucle no corte */
   var track = document.querySelector('.marquee-t');
   if (track) track.innerHTML += track.innerHTML;

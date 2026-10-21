@@ -207,7 +207,11 @@ a{color:inherit;text-decoration:none}
 @media (max-width:860px){.tilt-g{grid-template-columns:1fr}.tilt{transform:rotate(-1.4deg)}}
 /* Sobre papel, el marco color papel se perdia y solo la sombra lo dibujaba:
    en el rescate el marco es blanco y basta para despegar la foto del fondo. */
-#conservacion .tilt{background:#fff;box-shadow:none}
+#conservacion .tilt,#reserva .tilt{background:#fff;box-shadow:none}
+/* En la presentación la foto cuelga bajo el titular, alineada con él.
+   Es cuadrada: el recorte sube un poco para no perder los farallones. */
+#reserva .tilt{margin:clamp(1.8rem,4vw,2.8rem) 0 0}
+#reserva .tilt img{object-position:50% 38%}
 
 /* ---------- CTA en el hero ---------- */
 .hero-cta-b{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
@@ -490,6 +494,47 @@ body.pl-lock{overflow:hidden}
 @media (max-width:640px){
   .gal-in{width:min(100%,calc((100svh - 12.5rem) * .8))}
   .gal-sl{aspect-ratio:4/5}
+}
+
+/* ---------- Postales: galería en abanico ---------- */
+/* Cada tarjeta es una polaroid .tilt colgada del centro del escenario. JS le
+   da su desfase circular respecto de la activa (--o, negativo a la izquierda)
+   y su distancia (--a); con eso el CSS la corre, la baja en arco, la gira y la
+   achica. Al pasar el ratón el abanico se abre (--sp y --rot crecen). */
+.fan-blk{overflow:hidden}   /* el abanico abierto se sale de la caja */
+.fan{--fw:clamp(220px,21vw,290px);--sp:calc(var(--fw) * .34);--rot:6deg;
+  margin-top:clamp(2rem,5vw,3.4rem)}
+.fan-st{position:relative;list-style:none;margin:0;padding:0;touch-action:pan-y;
+  height:calc(var(--fw) + 24px + 4.5rem)}   /* foto cuadrada + marco + caída del arco */
+.fan-c{position:absolute;top:0;left:50%;width:var(--fw);margin-left:calc(var(--fw) / -2);
+  cursor:pointer;transform-origin:50% 100%;
+  transform:translateX(calc(var(--o,0) * var(--sp)))
+            translateY(calc(var(--a,0) * var(--a,0) * 5px + var(--a,0) * 6px))
+            rotate(calc(var(--o,0) * var(--rot)))
+            scale(calc(1 - var(--a,0) * .06));
+  transition:transform .8s cubic-bezier(.34,1.45,.5,1),opacity .45s ease}
+.fan-c[aria-hidden="false"]{cursor:default}
+.fan-c.is-far{opacity:0;pointer-events:none}
+.fan .tilt{margin:0;max-width:none;transform:none;background:#fff}
+/* Son las mismas fotos del resto de la página, recortadas al cuadrado. */
+.fan .tilt img{height:auto;aspect-ratio:1;user-select:none;-webkit-user-drag:none}
+@media (hover:hover){.fan-st:hover{--sp:calc(var(--fw) * .62);--rot:4deg}}
+/* Entrada: hasta que el bloque se ve, todas esperan apiladas y ocultas;
+   luego se abren escalonadas del centro hacia afuera, con rebote. */
+.fan:not(.is-in) .fan-c{transform:translateY(3rem) scale(.88);opacity:0}
+.fan.is-opening .fan-c{transition-delay:calc(var(--a,0) * 90ms)}
+.fan-nav{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1.2rem}
+.fan-dots{display:flex}
+.fan-dots button{width:20px;height:20px;padding:0;border:0;background:none;color:inherit;
+  cursor:pointer;display:grid;place-items:center}
+.fan-dots button::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;
+  opacity:.35;transition:opacity .2s,transform .2s}
+.fan-dots button:hover::before{opacity:.7}
+.fan-dots button[aria-current]::before{opacity:1;transform:scale(1.3)}
+@media (max-width:640px){
+  .fan{--fw:min(64vw,260px);--sp:calc(var(--fw) * .3);--rot:5deg}
+  .fan-st{height:calc(var(--fw) + 24px + 2rem)}   /* solo dos por lado: el arco cae menos */
+  .fan-dots button{width:16px}
 }
 
 /* ---------- Botones a bloque en móvil ---------- */
