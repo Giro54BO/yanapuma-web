@@ -133,11 +133,11 @@ TEXTOS = {
     "Restauración": "Restoration",
     "Veinte hectáreas": "Twenty hectares",
     "que vuelven al bosque": "returning to forest",
-    "El proyecto abarca 1.100 hectáreas distribuidas en dos propiedades: Volcanes y Piedras Blancas.":
-        "The project covers 1,100 hectares across two properties: Volcanes and Piedras Blancas.",
+    "El proyecto abarca 1.180 hectáreas distribuidas en dos propiedades: Volcanes y Piedras Blancas.":
+        "The project covers 1,180 hectares across two properties: Volcanes and Piedras Blancas.",
     "Veinte de esas hectáreas están deforestadas y hoy se encuentran en proceso de restauración. El objetivo es devolverles cobertura boscosa hasta que vuelvan a integrarse al bosque que las rodea.":
         "Twenty of those hectares were deforested and are now being restored. The aim is to bring back forest cover until they rejoin the woodland around them.",
-    "1.100 ha": "1,100 ha",
+    "1.180 ha": "1,180 ha",
     "Superficie del proyecto": "Project area",
     "En restauración": "Under restoration",
     "Donar a la reforestación": "Donate to the reforestation",
