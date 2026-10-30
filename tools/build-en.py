@@ -41,7 +41,6 @@ TEXTOS = {
     "Abrir menú": "Open menu",
     "Cerrar menú": "Close menu",
     "Principal": "Main",
-    "Volver arriba": "Back to top",
     "Vuelo sobre los farallones de arenisca cubiertos de bosque":
         "Flight over the forested sandstone cliffs",
     "Recorrido por la reserva: vuelo sobre las serranías boscosas, los cafetales y el equipo de Yanapuma":
@@ -75,7 +74,7 @@ TEXTOS = {
     # --- el modelo ---
     "Cinco dimensiones": "Five dimensions",
     "para un mismo propósito": "of a single purpose",
-    "Confluencia ecológica": "Ecological confluence",
+    "Ecosistema": "Ecosystem",
     "El territorio": "The territory",
     "Hábitats de distintas alturas que dan refugio a una biodiversidad singular.":
         "Habitats at different elevations that shelter a singular biodiversity.",
@@ -83,7 +82,7 @@ TEXTOS = {
         "Dry, high ground gives way to humid, densely vegetated areas: the range of microclimates lets species from different environments meet within a single protected space.",
     "Yanapuma es hogar y corredor biológico del jaguar, el puma y el oso jucumari, además de una notable variedad de aves, reptiles y pequeños mamíferos.":
         "Yanapuma is home and biological corridor to the jaguar, the puma and the spectacled bear, along with a remarkable variety of birds, reptiles and small mammals.",
-    "Inmersión de bajo impacto": "Low-impact immersion",
+    "Ecoturismo": "Ecotourism",
     "El acceso": "Access",
     "Senderos, miradores y avistamientos diseñados para acompañar el ritmo de la naturaleza.":
         "Trails, lookouts and sightings designed to follow nature's own pace.",
@@ -91,7 +90,6 @@ TEXTOS = {
         "Four main trails and two short routes, suited to different levels of walking.",
     "Cada visita se coordina previamente y se realiza con guías especializados. Los cupos son limitados.":
         "Every visit is arranged in advance and led by specialist guides. Places are limited.",
-    "Protección activa": "Active protection",
     "La labor": "The work",
     "Recuperación del territorio y un centro dedicado a la rehabilitación de animales silvestres.":
         "Restoring the land, and a centre devoted to rehabilitating wild animals.",
@@ -99,7 +97,7 @@ TEXTOS = {
         "Part of the reserve was affected by farming; the work today is to return native plant cover to that ground.",
     "El centro de rescate opera en alianza con las autoridades ambientales competentes.":
         "The rescue centre operates in partnership with the relevant environmental authorities.",
-    "Convivencia y calma": "Coexistence and calm",
+    "Arquitectura artesanal lujosa": "Luxury handcrafted architecture",
     "La estadía": "The stay",
     "Una propuesta de alojamiento exclusiva, de escala reducida, integrada al entorno.":
         "Lodging on a deliberately small scale, built into its surroundings.",
@@ -107,7 +105,7 @@ TEXTOS = {
         "Built from local materials — stone, clay, sand and wood — and oriented to make the most of natural light and ventilation.",
     "Toda la madera proviene de árboles caídos o dañados de forma natural dentro del propio territorio.":
         "All the timber comes from trees that fell or were damaged naturally within the territory itself.",
-    "Sostenibilidad en origen": "Sustainability at source",
+    "Agroforestería regenerativa": "Regenerative agroforestry",
     "La producción": "Production",
     "Café Tigrenegro, una iniciativa productiva que financia directamente la labor de Yanapuma.":
         "Café Tigrenegro, a production venture that funds Yanapuma's work directly.",
@@ -195,9 +193,8 @@ TEXTOS = {
     "Auspicia a un animal del centro de rescate y recibe cada mes un informe de cómo avanza su recuperación y su enriquecimiento.":
         "Sponsor an animal at the rescue centre and receive a monthly report on how its recovery and enrichment are progressing.",
     "Consultar sobre el aporte mensual": "Ask about the monthly contribution",
-    "Registro de una cámara trampa de la reserva": "Footage from one of the reserve's camera traps",
     "Ver los tours": "See the tours",
-    "Sobre el café": "About the coffee",
+    "Conocer más sobre café TIGRENEGRO": "Learn more about TIGRENEGRO coffee",
     "Consultar sobre el voluntariado": "Ask about volunteering",
     "Consultar sobre aportes": "Ask about contributions",
 
@@ -265,17 +262,19 @@ TEXTOS = {
     # --- pie ---
     "Proteger la naturaleza también es aprender a estar en ella sin dejar huella.":
         "Protecting nature also means learning to be in it without leaving a trace.",
+    "Ubicación": "Location",
+    "Todos los derechos reservados.": "All rights reserved.",
     "Ruta a Samaipata, km 81": "Samaipata road, km 81",
-    "Escribir ahora": "Message us",
-    "Correo": "Email",
-    "Formulario de consulta": "Enquiry form",
-    "Redes": "Social",
 
     # --- textos alternativos ---
     "Vista aérea del valle y los farallones de arenisca de la reserva":
         "Aerial view of the valley and the reserve's sandstone cliffs",
     "Sendero de altura con vista sobre las serranías":
         "High trail looking out over the ranges",
+    "Registro de cámara trampa: un jaguar camina por el sendero":
+        "Camera trap record: a jaguar walks along the trail",
+    "Registro de cámara trampa: un puma olfatea el suelo del sendero":
+        "Camera trap record: a puma sniffs the ground on the trail",
     "Registro de cámara trampa: un puma recorre el sotobosque":
         "Camera trap record: a puma moves through the understorey",
     "Galería de madera abierta con vista al valle":

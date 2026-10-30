@@ -114,7 +114,9 @@
         if (!src) return;
         img.src = src;
         img.alt = b.textContent;
-        cred.href = b.getAttribute('data-href');
+        // Sin enlace a la fuente, el crédito queda como texto.
+        var href = b.getAttribute('data-href');
+        if (href) cred.href = href; else cred.removeAttribute('href');
         cred.textContent = b.getAttribute('data-credit');
       });
     });
@@ -130,15 +132,34 @@
         pista = dlg.querySelector('.gal-track'),
         escena = dlg.querySelector('.gal-stage'),
         cuenta = dlg.querySelector('.gal-n'),
+        pie = dlg.querySelector('.gal-cap'),
         nav = dlg.querySelector('.gal-nav'),
         vacio = dlg.querySelector('.gal-vacio'),
-        fotos = [], i = 0, origen = null, abajo = null, x0 = null;
+        fotos = [], rotulos = [], i = 0, origen = null, abajo = null, x0 = null;
 
     function ir(n) {
       i = (n + fotos.length) % fotos.length;
       pista.style.transform = 'translateX(' + (-100 * i) + '%)';
       fotos.forEach(function (f, k) { f.setAttribute('aria-hidden', String(k !== i)); });
-      cuenta.textContent = (i + 1) + ' / ' + fotos.length;
+      cuenta.textContent = fotos.length > 1 ? (i + 1) + ' / ' + fotos.length : '';
+      // Rótulo de la foto, como el nombre y el crédito de las aves:
+      // especie en claro, nombre científico en cursiva y la hora del registro.
+      var r = rotulos[i];
+      pie.innerHTML = '';
+      if (!r || !r.cap) return;
+      var b = document.createElement('b');
+      b.textContent = r.cap;
+      pie.appendChild(b);
+      if (r.sci) {
+        var em = document.createElement('i');
+        em.textContent = r.sci;
+        pie.appendChild(em);
+      }
+      if (r.hora) {
+        var t = document.createElement('span');
+        t.textContent = r.hora;
+        pie.appendChild(t);
+      }
     }
 
     function abrir(b) {
@@ -147,6 +168,10 @@
       if (!items.length) items = [null];
       titulo.textContent = card.querySelector('h3').textContent;
       pista.innerHTML = '';
+      rotulos = items.map(function (it) {
+        return it && { cap: it.getAttribute('data-cap'), sci: it.getAttribute('data-sci'),
+                       hora: it.getAttribute('data-hora') };
+      });
       fotos = items.map(function (it) {
         var fig = document.createElement('figure'),
             src = it && it.getAttribute('data-src');
@@ -163,7 +188,8 @@
         pista.appendChild(fig);
         return fig;
       });
-      nav.hidden = fotos.length < 2;
+      nav.hidden = fotos.length < 2 && !(rotulos[0] && rotulos[0].cap);
+      dlg.querySelector('.gal-arr').hidden = fotos.length < 2;
       ir(0);                      // con la ventana cerrada no hay transición: abre en la primera
       origen = b;
       document.body.classList.add('locked');
