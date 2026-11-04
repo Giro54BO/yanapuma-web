@@ -53,10 +53,6 @@ Estadía · Café Tigre Negro · Cómo llegar
   el logotipo.
 - **Color.** Verde olivo `#424530` y naranja `#E09132`, con sus neutros
   derivados.
-- **Pendiente de contenido.** Montos de auspicio, número de cámaras trampa, qué
-  animales admiten auspicio y las condiciones de los voluntariados. El botón de
-  donación a la reforestación lleva a contacto: la primera versión no incluye
-  pasarela de pago.
 
 ---
 
