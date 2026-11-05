@@ -1,1 +1,10 @@
 .DS_Store
+
+# Material de trabajo local: no se publica
+/Context/
+/Imagenes/
+/Marca/
+/.claude/
+
+# Video original del hero (58 MB); el sitio usa Yanapuma-Hero-3-web.mp4
+/assets/video/Yanapuma-Hero-3.mp4

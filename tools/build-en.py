@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Genera site/en/index.html a partir de site/index.html.
+"""Genera en/index.html a partir de index.html.
 
 El sitio es estatico a proposito, asi que el ingles vive en su propia URL en
 lugar de conmutarse con JavaScript: sale en el HTML servido, funciona sin JS y
@@ -18,8 +18,8 @@ import re
 import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ORIGEN = os.path.join(RAIZ, "site", "index.html")
-DESTINO = os.path.join(RAIZ, "site", "en", "index.html")
+ORIGEN = os.path.join(RAIZ, "index.html")
+DESTINO = os.path.join(RAIZ, "en", "index.html")
 
 # Se aplican de la mas larga a la mas corta, para que una frase completa se
 # traduzca antes de que una palabra suelta pueda morderla por dentro.
