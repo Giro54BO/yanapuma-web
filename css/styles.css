@@ -153,13 +153,13 @@ a{color:inherit;text-decoration:none}
 .hero-b{position:relative;height:100svh;min-height:520px;overflow:hidden;background:var(--olive-dd)}
 .hero-b video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero-b::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(to bottom,rgba(34,37,26,.42) 0%,rgba(34,37,26,0) 34%)}
+  background:linear-gradient(to bottom,rgba(34,37,26,.42) 0%,rgba(34,37,26,.12) 42%,rgba(34,37,26,.72) 100%)}
 .hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;
   justify-content:space-between;
   padding-block:clamp(1.4rem,3vw,2.2rem) clamp(1.6rem,4vw,3rem)}
 .hero-b .brand{color:var(--on-dark)}
 .hero-b .brand svg{width:clamp(180px,20.4vw,264px);height:auto}
-/* El hero muestra solo el video: el titular queda para lectores de pantalla y buscadores. */
+/* El hero muestra el video y los botones: el titular queda para lectores de pantalla y buscadores. */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
   clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
@@ -213,6 +213,9 @@ a{color:inherit;text-decoration:none}
 #reserva .tilt img{object-position:50% 38%}
 
 /* ---------- CTA en el hero ---------- */
+.hero-cta-b{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2.5rem}
+.hero-b .pill{color:var(--on-dark)}
+.hero-b .pill:hover span{color:var(--olive)}
 
 /* ---------- Bloque foto inclinada, orden invertido ---------- */
 .tilt-g.rev .tilt{order:2}
@@ -557,6 +560,7 @@ body.pl-lock{overflow:hidden}
 /* ---------- Botones a bloque en móvil ---------- */
 @media (max-width:640px){
   .pill{width:100%;justify-content:center;padding:.72rem 1.15rem}
+  .hero-cta-b{width:100%}
   .foot-b .pill,.tilt-t .pill,.split .r .pill,.map-b .pill,
   .rewild .pill,.cafe-t .pill{align-self:stretch}
 }

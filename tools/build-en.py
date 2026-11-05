@@ -53,6 +53,7 @@ TEXTOS = {
     "Planificar una visita": "Plan a visit",
 
     # --- portada ---
+    "Conocer Yanapuma": "Discover Yanapuma",
     "Vida y belleza": "Life and beauty",
     "que merecen": "that deserve",
     "permanecer intactas": "to remain untouched",
