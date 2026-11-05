@@ -56,7 +56,6 @@ TEXTOS = {
     "Vida y belleza": "Life and beauty",
     "que merecen": "that deserve",
     "permanecer intactas": "to remain untouched",
-    "Conocer Yanapuma": "Discover Yanapuma",
 
     # --- la reserva ---
     "Un espacio que encontró a su guardián.": "A place that found its guardian.",
@@ -73,7 +72,7 @@ TEXTOS = {
 
     # --- el modelo ---
     "Cinco dimensiones": "Five dimensions",
-    "para un mismo propósito": "of a single purpose",
+    "un propósito": "one purpose",
     "Ecosistema": "Ecosystem",
     "El territorio": "The territory",
     "Hábitats de distintas alturas que dan refugio a una biodiversidad singular.":
@@ -260,8 +259,10 @@ TEXTOS = {
     "Coordinar visita": "Arrange a visit",
 
     # --- pie ---
-    "Proteger la naturaleza también es aprender a estar en ella sin dejar huella.":
-        "Protecting nature also means learning to be in it without leaving a trace.",
+    '<p class="display">Naturaleza<br>que merece<span class="outline">estar intacta.</span></p>':
+        '<p class="display">Nature<br>that deserves<span class="outline">to stay untouched.</span></p>',
+    "Proteger la naturaleza es aprender a convivir dentro de ella causando el mínimo impacto.":
+        "Protecting nature means learning to live within it with the least possible impact.",
     "Ubicación": "Location",
     "Todos los derechos reservados.": "All rights reserved.",
     "Ruta a Samaipata, km 81": "Samaipata road, km 81",
@@ -289,6 +290,22 @@ TEXTOS = {
         "Open sky over the forested ranges",
     "Vista aérea de la reserva: bosque continuo, el camino de acceso y los farallones al fondo":
         "Aerial view of the reserve: unbroken forest, the access road and the cliffs beyond",
+    "Araña cangrejo blanca de abdomen con puntas, posada sobre una rama":
+        "White crab spider with a spiked abdomen, perched on a twig",
+    "Fotógrafo tendido sobre la roca retrata a una culebra verde":
+        "A photographer lying on the rock photographs a green snake",
+    "Culebra verde enroscada sobre una roca junto al arroyo":
+        "Green snake coiled on a rock beside the stream",
+    "Primer plano de la cabeza de una culebra verde":
+        "Close-up of a green snake's head",
+    "Culebra verde oliva con la cabeza erguida sobre una roca":
+        "Olive-green snake raising its head on a rock",
+    "Primer plano de la cabeza de una víbora entre sus propios anillos":
+        "Close-up of a pit viper's head resting among its own coils",
+    "Víbora enroscada sobre la roca a orillas del arroyo":
+        "Pit viper coiled on the rock at the stream's edge",
+    "Víbora enroscada junto al arroyo, con la cabeza alzada":
+        "Pit viper coiled by the stream, head raised",
     "Café recién preparado sirviéndose humeante en una taza":
         "Freshly brewed coffee being poured, steaming, into a cup",
     "Mapa del Parque Nacional Amboró entre Cochabamba y Santa Cruz, con la ruta que pasa por Samaipata y los predios de Yanapuma en Volcanes y Piedras Blancas":
