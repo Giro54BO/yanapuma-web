@@ -60,9 +60,7 @@ TEXTOS = {
 
     # --- la reserva ---
     "Un espacio que encontró a su guardián.": "A place that found its guardian.",
-    "Un compromiso": "A commitment",
-    "sostenible": "sustained",
-    "en el tiempo": "over time",
+    "<h2>Naturaleza<br>que merece<br>permanecer intacta</h2>": "<h2>Nature<br>that deserves<br>to remain intact</h2>",
     "A 81 km de Santa Cruz de la Sierra, en la ruta hacia Samaipata y en la zona de amortiguamiento del Parque Nacional Amboró, Yanapuma resguarda una extraordinaria composición de paisajes, microclimas y vida silvestre.":
         "81 km from Santa Cruz de la Sierra, on the road to Samaipata and within the buffer zone of Amboró National Park, Yanapuma safeguards an extraordinary composition of landscapes, microclimates and wildlife.",
     "En las tradiciones andino-amazónicas, Yanapuma es el felino negro que habita y protege la naturaleza: una figura vinculada al equilibrio del territorio y a la idea de que el bosque merece respeto.":
@@ -95,8 +93,8 @@ TEXTOS = {
         "Restoring the land, and a centre devoted to rehabilitating wild animals.",
     "Parte de la reserva fue impactada por actividades agrícolas; hoy se trabaja en devolver a esos suelos su cobertura vegetal nativa.":
         "Part of the reserve was affected by farming; the work today is to return native plant cover to that ground.",
-    "El centro de rescate opera en alianza con las autoridades ambientales competentes.":
-        "The rescue centre operates in partnership with the relevant environmental authorities.",
+    "El centro de custodia opera en alianza con las autoridades ambientales competentes.":
+        "The custody centre operates in partnership with the relevant environmental authorities.",
     "Arquitectura artesanal lujosa": "Luxury handcrafted architecture",
     "La estadía": "The stay",
     "Una propuesta de alojamiento exclusiva, de escala reducida, integrada al entorno.":
@@ -119,8 +117,8 @@ TEXTOS = {
     # --- conservacion ---
     "No es un zoológico.": "This is not a zoo.",
     "Es un refugio.": "It is a refuge.",
-    "En alianza con las autoridades ambientales competentes, Yanapuma desarrolla un centro de rescate dedicado a animales silvestres víctimas de tráfico o pérdida de su hábitat.":
-        "In partnership with the relevant environmental authorities, Yanapuma runs a rescue centre for wild animals that have been trafficked or have lost their habitat.",
+    "En alianza con las autoridades ambientales competentes, Yanapuma desarrolla un centro de custodia dedicado a animales silvestres víctimas de tráfico o pérdida de su hábitat.":
+        "In partnership with the relevant environmental authorities, Yanapuma runs a custody centre for wild animals that have been trafficked or have lost their habitat.",
     "Cada individuo recibe evaluación médica y cuidados especializados, en procura de una eventual reintroducción en su hábitat natural cuando sea biológicamente viable.":
         "Each animal receives medical assessment and specialist care, working towards eventual reintroduction into its natural habitat whenever that is biologically viable.",
     "Cuando no lo es, la prioridad es garantizar un refugio permanente, con recintos diseñados bajo criterios de bienestar y enriquecimiento ambiental. No es un espacio de exhibición.":
@@ -128,9 +126,6 @@ TEXTOS = {
     "Cómo trabaja el centro": "How the centre works",
 
     # --- restauracion ---
-    "Restauración": "Restoration",
-    "Veinte hectáreas": "Twenty hectares",
-    "que vuelven al bosque": "returning to forest",
     "El proyecto abarca 1.180 hectáreas distribuidas en dos propiedades: Volcanes y Piedras Blancas.":
         "The project covers 1,180 hectares across two properties: Volcanes and Piedras Blancas.",
     "Veinte de esas hectáreas están deforestadas y hoy se encuentran en proceso de restauración. El objetivo es devolverles cobertura boscosa hasta que vuelvan a integrarse al bosque que las rodea.":
@@ -163,8 +158,8 @@ TEXTOS = {
     "Especies registradas": "Species recorded",
     "Listas subidas": "Checklists submitted",
     "Cifras del hotspot ": "Figures from the ",
-    " en eBird; la reserva tiene además otros puntos registrados. Allí el Buff-fronted Owl aparece 231 veces más frecuente que la media de la región. Relevamiento de campo de Raúl Navi, guía de observación de aves.":
-        " hotspot on eBird; the reserve has other registered points as well. There the Buff-fronted Owl is 231 times more frequent than the regional average. Field survey by Raúl Navi, birding guide.",
+    " en eBird; la reserva tiene además otros puntos registrados. Allí el Buff-fronted Owl aparece 231 veces más frecuente que la media de la región.":
+        " hotspot on eBird; the reserve has other registered points as well. There the Buff-fronted Owl is 231 times more frequent than the regional average.",
     "Ver el hotspot en eBird": "View the hotspot on eBird",
     "Foto pendiente": "Photo coming soon",
     "Foto: ": "Photo: ",
@@ -186,12 +181,12 @@ TEXTOS = {
         "Café Tigrenegro, grown under shade inside the reserve. The proceeds go directly to protecting the territory.",
     "Compra directa": "Direct purchase",
     "Voluntariados": "Volunteering",
-    "Estancias de trabajo junto al equipo, en tareas de conservación, reforestación y apoyo al centro de rescate.":
-        "Working stays alongside the team, on conservation, reforestation and support for the rescue centre.",
+    "Estancias de trabajo junto al equipo, en tareas de conservación, reforestación y apoyo al centro de custodia.":
+        "Working stays alongside the team, on conservation, reforestation and support for the custody centre.",
     "Estancias coordinadas": "Arranged stays",
     "Auspicio de animales rescatados": "Rescued animal sponsorship",
-    "Auspicia a un animal del centro de rescate y recibe cada mes un informe de cómo avanza su recuperación y su enriquecimiento.":
-        "Sponsor an animal at the rescue centre and receive a monthly report on how its recovery and enrichment are progressing.",
+    "Auspicia a un animal del centro de custodia y recibe cada mes un informe de cómo avanza su recuperación y su enriquecimiento.":
+        "Sponsor an animal at the custody centre and receive a monthly report on how its recovery and enrichment are progressing.",
     "Consultar sobre el aporte mensual": "Ask about the monthly contribution",
     "Ver los tours": "See the tours",
     "Conocer más sobre café TIGRENEGRO": "Learn more about TIGRENEGRO coffee",
@@ -245,7 +240,7 @@ TEXTOS = {
         "The jaguar is colloquially called a tiger. In the Yanapuma legend its name is sometimes preceded by Tigrenegro, black tiger: two ways of saying the same thing. That is where the reserve's coffee takes its name.",
     "El café nació de la conservación, no al revés. Del bosque a la taza. 1% cultivado 99% conservado.":
         "The coffee was born of conservation, not the other way round. From forest to cup. 1% cultivated, 99% conserved.",
-    "Centro de Rescate.": "Rescue Centre.",
+    "Centro de Custodia.": "Custody Centre.",
     "El café nació de la conservación, no al revés. Para recuperar los terrenos desmontados había que volver a plantarlos, y el cultivo bajo sombra permitió hacerlo produciendo.":
         "The coffee grew out of the conservation work, not the other way round. Recovering the cleared ground meant planting it again, and growing under shade made it possible to do that productively.",
     "Los cafetales crecen entre los 1.400 y los 1.750 metros, en suelos de terroirs distintos. La reserva cuenta con centro de beneficio propio y un banco genético de variedades exóticas de alto potencial en taza.":
